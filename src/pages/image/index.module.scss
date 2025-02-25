@@ -1,0 +1,13 @@
+.gallery{
+    height: 175vh;
+    background: rgb(45, 45, 45);
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    padding: 2vw;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.spacer{
+    height: 100vh;
+}

@@ -20,7 +20,7 @@ function Home() {
       requestAnimationFrame(raf)
     }
     requestAnimationFrame(raf)
-  })
+  }, [])
   return (
     <div className={styles.main}>
       {projects.map((project,index) => 
