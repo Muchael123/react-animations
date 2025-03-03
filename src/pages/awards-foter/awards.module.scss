@@ -1,0 +1,14 @@
+.container{
+    position: relative;
+    height: 800px;
+    .stickarea{
+        height: calc(100vh + 800px);
+        position: relative;
+        top: -100vh;
+        .stickydiv{
+            height: 800px;
+            position: sticky;
+            top: calc(100vh - 800px)
+        }
+    }
+}
