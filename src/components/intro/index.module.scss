@@ -1,12 +1,43 @@
 .intro{
-    height: 100vh;
     display: flex;
-    font-size: 2vw;
     align-items: center;
     justify-content: center;
-    h2{
-        max-width: 45%;
-        text-align: center;
-        line-height: 1;
+    flex-direction: column;
+  overflow: hidden;
+}
+.phrase{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    
+    p{
+        font-size: 7.5vw;
+        
     }
+    span{
+        position: relative;
+        height: 7.5vw;
+        aspect-ratio: 4 / 2;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    gap:12px;
+    position: relative;
+}
+.body{
+    height: 300vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
