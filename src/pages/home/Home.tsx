@@ -4,6 +4,7 @@ import styles from './app.module.scss'
 import { useScroll} from 'motion/react'
 import { useEffect, useRef } from 'react';
 import Lenis from 'lenis';
+import Header from '../../components/header';
 
 
 function Home() {
@@ -22,7 +23,9 @@ function Home() {
     requestAnimationFrame(raf)
   }, [])
   return (
-    <div className={styles.main}>
+    <div>
+      <Header />
+      <div className={styles.main}>
       {projects.map((project,index) => 
       <Card key={index} {...project}
        i={index} range={[index*.2, 1]} 
@@ -30,6 +33,7 @@ function Home() {
        targetScale = {1- ((projects.length-index)*.05)}
         />
       )}
+    </div>
     </div>
   );
 }
